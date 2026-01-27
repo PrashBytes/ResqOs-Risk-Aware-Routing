@@ -1,0 +1,5 @@
+.idea/
+cache/
+*.png
+*.graphml
+path_results.csv

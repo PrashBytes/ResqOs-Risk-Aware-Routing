@@ -28,7 +28,7 @@ This repository contains a Python prototype for **ResQOS**, a lightweight AI-bas
 
 ## Edge Sensing Prototype
 
-![Edge Sensing Prototype](edge_sensing_prototype.png)
+![Edge Sensing Prototype](iot_sensing_module.png)
 
 Prototype setup demonstrating how real-time environmental inputs (e.g., obstacles, proximity, hazard signals) can be captured at the edge and fed into the routing system for dynamic risk estimation.
 ---

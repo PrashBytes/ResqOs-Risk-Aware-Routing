@@ -1,26 +1,47 @@
 # ResQOS – T. Nagar Risk-Aware Routing
 
-This repository contains a Python prototype for **ResQOS**, a lightweight AI micro‑OS that computes risk‑aware routes in T. Nagar, Chennai.
+This repository contains a Python prototype for **ResQOS**, a lightweight AI-based system that computes risk-aware evacuation routes in T. Nagar, Chennai.
+
+---
 
 ## Features
 
-- Download T. Nagar drivable road network from OpenStreetMap using OSMnx.
-- Attach multi-hazard data (water level, crowd density, rainfall, light).
-- Compute fuzzy risk scores per road segment and derive an effective cost.
-- Run risk‑aware shortest path routing with NetworkX.
-- Visualise the safest path using Matplotlib (static and animated).
-- Simple Tkinter GUI to select source and target junctions.
+- Extracts drivable road network from OpenStreetMap using OSMnx  
+- Integrates multi-hazard data (water level, crowd density, rainfall, light)  
+- Computes risk scores for each road segment using a fuzzy logic approach  
+- Performs risk-aware shortest path routing using NetworkX  
+- Visualises safest routes using Matplotlib (static and animated)  
+- Includes a simple Tkinter GUI for selecting source and destination  
 
-## Tech stack
+---
 
-- Python
-- OSMnx, NetworkX, pandas, NumPy
-- Matplotlib (with FuncAnimation)
-- Tkinter (GUI)
+## Tech Stack
 
-## How to run (outline)
+- Python  
+- OSMnx, NetworkX  
+- pandas, NumPy  
+- Matplotlib (FuncAnimation)  
+- Tkinter  
 
-1. Run `get_tnagar_graph.py` to download and save the T. Nagar graph.
-2. Run `build_edges_with_risk.py` to compute risk scores and effective costs.
-3. Run `run_safe_path.py` to compute a sample safest path.
-4. Run `animate_safe_path.py` to select junctions and see the path animation.
+---
+
+## How to Run
+
+1. Run `get_tnagar_graph.py`  
+   → Downloads and saves the T. Nagar road network  
+
+2. Run `build_edges_with_risk.py`  
+   → Computes risk scores and effective edge costs  
+
+3. Run `run_safe_path.py`  
+   → Generates a sample safest route  
+
+4. Run `animate_safe_path.py`  
+   → Launches GUI to select nodes and visualise route  
+
+---
+
+## Notes
+
+- Current implementation uses fuzzy logic for risk scoring  
+- Deep Learning-based risk modeling is under development and integration  
